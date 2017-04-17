@@ -5,6 +5,7 @@ target
 tmp
 dist
 .cache
+/out
 
 # IntelliJ IDEA
 /.idea
