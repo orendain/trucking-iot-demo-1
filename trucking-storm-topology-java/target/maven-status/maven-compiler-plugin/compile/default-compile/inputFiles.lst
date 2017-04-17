@@ -3,4 +3,3 @@
 /Users/eorendain/Documents/trucking/trucking-iot-maven/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/CSVStringToObjectBolt.java
 /Users/eorendain/Documents/trucking/trucking-iot-maven/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/TruckAndTrafficJoinBolt.java
 /Users/eorendain/Documents/trucking/trucking-iot-maven/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/DataWindowingBolt.java
-/Users/eorendain/Documents/trucking/trucking-iot-maven/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/schemes/TruckingStringScheme.java

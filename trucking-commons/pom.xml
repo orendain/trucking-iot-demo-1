@@ -13,6 +13,11 @@
   <artifactId>trucking-commons</artifactId>
   <name>Trucking Commons</name>
 
+  <properties>
+    <scala-library.version>2.11.10</scala-library.version>
+    <scala-maven-plugin.version>3.2.1</scala-maven-plugin.version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.scala-lang</groupId>

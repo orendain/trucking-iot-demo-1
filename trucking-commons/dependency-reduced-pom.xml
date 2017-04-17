@@ -49,5 +49,9 @@
       </plugin>
     </plugins>
   </build>
+  <properties>
+    <scala-maven-plugin.version>3.2.1</scala-maven-plugin.version>
+    <scala-library.version>2.11.10</scala-library.version>
+  </properties>
 </project>
 

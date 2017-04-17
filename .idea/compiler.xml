@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="trucking-commons" target="1.8" />
+      <module name="trucking-commons" target="1.5" />
       <module name="trucking-iot" target="1.5" />
       <module name="trucking-storm-topology-java" target="1.8" />
       <module name="trucking-storm-topology-java-java" target="1.8" />
