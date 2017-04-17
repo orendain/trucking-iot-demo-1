@@ -5,14 +5,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.orendainx</groupId>
-  <artifactId>trucking-iot</artifactId>
+  <artifactId>trucking-iot-demo-1</artifactId>
   <version>0.3.2</version>
   <packaging>pom</packaging>
-  <name>TruckingIoT</name>
+  <name>Trucking IoT Demo 1</name>
   <description>
     A modern real-time streaming application serving as a reference framework for developing a big data pipeline, complete with a broad range of use cases and powerful reusable core components.
   </description>
-  <url>http://github.com/orendain/trucking-iot</url>
+  <url>http://github.com/orendain/trucking-iot-demo-1</url>
 
   <modules>
     <module>trucking-commons</module>
@@ -24,9 +24,9 @@
   </properties>
 
   <scm>
-    <connection>scm:git:git://github.com/orendain/trucking-iot.git</connection>
-    <developerConnection>scm:git:git@github.com:orendain/trucking-iot.git</developerConnection>
-    <url>http://github.com/orendain/trucking-iot.git</url>
+    <connection>scm:git:git://github.com/orendain/trucking-iot-demo-1.git</connection>
+    <developerConnection>scm:git:git@github.com:orendain/trucking-iot-demo-1.git</developerConnection>
+    <url>http://github.com/orendain/trucking-iot-demo-1.git</url>
     <tag>HEAD</tag>
   </scm>
 

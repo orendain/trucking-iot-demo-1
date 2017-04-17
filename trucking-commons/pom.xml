@@ -6,7 +6,7 @@
 
   <parent>
     <groupId>com.orendainx</groupId>
-    <artifactId>trucking-iot</artifactId>
+    <artifactId>trucking-iot-demo-1</artifactId>
     <version>0.3.2</version>
   </parent>
 
