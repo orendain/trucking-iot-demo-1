@@ -12,7 +12,10 @@ import org.apache.storm.tuple.Tuple;
 import org.apache.storm.tuple.Values;
 import org.apache.storm.windowing.TupleWindow;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 
 import static java.lang.Math.abs;
 
@@ -71,28 +74,26 @@ public class TruckAndTrafficJoinBolt extends BaseWindowedBolt {
 
     // For each EnrichedTruckData object, find the TrafficData object with the closest timestamp
     for (Map.Entry<Integer, ArrayList<EnrichedTruckData>> entry : truckDataPerRoute.entrySet()) {
+
       int routeId = entry.getKey();
       ArrayList<EnrichedTruckData> truckDataList = entry.getValue();
-
       ArrayList<TrafficData> trafficDataList = trafficDataPerRoute.get(routeId);
 
+      // If test fails, window didn't capture any traffic data for this truck's route
       if (trafficDataList != null) {
-        for (EnrichedTruckData truckData : truckDataList) {
+        truckDataList.forEach(truckData ->
+          trafficDataList.stream()
+              .sorted(Comparator.comparingLong(d -> abs(d.eventTime() - truckData.eventTime()))) // Sort by event with the closest timestamp
+              .findFirst() // Take the first result
+              .ifPresent(td -> {
+                EnrichedTruckAndTrafficData joinedData =
+                    new EnrichedTruckAndTrafficData(truckData.eventTime(), truckData.truckId(), truckData.driverId(), truckData.driverName(),
+                        truckData.routeId(), truckData.routeName(), truckData.latitude(), truckData.longitude(), truckData.speed(),
+                        truckData.eventType(), truckData.foggy(), truckData.rainy(), truckData.windy(), td.congestionLevel());
 
-          // Sort by event with the closest timestamp
-          trafficDataList.sort(Comparator.comparingLong(d -> abs(d.eventTime() - truckData.eventTime())));
-
-          // Otherwise, window didn't capture any traffic data for this truck's route
-          if (trafficDataList.size() > 0) {
-            TrafficData trafficData = trafficDataList.get(0);
-
-            EnrichedTruckAndTrafficData joinedData = new EnrichedTruckAndTrafficData(truckData.eventTime(), truckData.truckId(), truckData.driverId(), truckData.driverName(),
-                truckData.routeId(), truckData.routeName(), truckData.latitude(), truckData.longitude(), truckData.speed(),
-                truckData.eventType(), truckData.foggy(), truckData.rainy(), truckData.windy(), trafficData.congestionLevel());
-
-            outputCollector.emit(new Values("EnrichedTruckAndTrafficData", joinedData, joinedData.driverId()));
-          }
-        }
+                outputCollector.emit(new Values("EnrichedTruckAndTrafficData", joinedData, joinedData.driverId()));
+              })
+        );
       }
     }
   }

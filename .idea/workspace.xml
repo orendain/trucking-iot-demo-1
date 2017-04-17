@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="821c13a7-f001-461d-8bc8-80007c728054" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/schemes/TruckingStringScheme.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trucking-commons/target/original-trucking-commons-0.3.2.jar" afterPath="$PROJECT_DIR$/trucking-commons/target/original-trucking-commons-0.3.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trucking-commons/target/trucking-commons-0.3.2.jar" afterPath="$PROJECT_DIR$/trucking-commons/target/trucking-commons-0.3.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trucking-storm-topology-java/target/classes/com/orendainx/hortonworks/trucking/storm/java/bolts/TruckAndTrafficJoinBolt.class" afterPath="$PROJECT_DIR$/trucking-storm-topology-java/target/classes/com/orendainx/hortonworks/trucking/storm/java/bolts/TruckAndTrafficJoinBolt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trucking-storm-topology-java/target/classes/com/orendainx/hortonworks/trucking/storm/java/topologies/KafkaToKafka.class" afterPath="$PROJECT_DIR$/trucking-storm-topology-java/target/classes/com/orendainx/hortonworks/trucking/storm/java/topologies/KafkaToKafka.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trucking-storm-topology-java/target/original-trucking-storm-topology-java-0.3.2.jar" afterPath="$PROJECT_DIR$/trucking-storm-topology-java/target/original-trucking-storm-topology-java-0.3.2.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trucking-storm-topology-java/target/trucking-storm-topology-java-0.3.2.jar" afterPath="$PROJECT_DIR$/trucking-storm-topology-java/target/trucking-storm-topology-java-0.3.2.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/TruckAndTrafficJoinBolt.java" afterPath="$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/TruckAndTrafficJoinBolt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/topologies/KafkaToKafka.java" afterPath="$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/topologies/KafkaToKafka.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trucking-storm-topology-java/src/main/resources/application.conf" afterPath="$PROJECT_DIR$/trucking-storm-topology-java/src/main/resources/application.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trucking-storm-topology-java/target/classes/application.conf" afterPath="$PROJECT_DIR$/trucking-storm-topology-java/target/classes/application.conf" />
     </list>
     <ignored path="$PROJECT_DIR$/trucking-storm-topology-java/target/maven-status/" />
     <manually-removed-from-ignored>
@@ -25,7 +30,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5701429">
+    <splitter split-orientation="horizontal" split-proportion="0.51846844">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
@@ -41,8 +46,8 @@
           <file leaf-file-name="TruckAndTrafficJoinBolt.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/TruckAndTrafficJoinBolt.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="711">
-                  <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+                <state relative-caret-position="-535">
+                  <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -53,8 +58,8 @@
           <file leaf-file-name="KafkaToKafka.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/topologies/KafkaToKafka.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+                <state relative-caret-position="479">
+                  <caret line="88" column="91" lean-forward="true" selection-start-line="88" selection-start-column="91" selection-end-line="88" selection-end-column="91" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -65,8 +70,8 @@
           <file leaf-file-name="CSVStringToObjectBolt.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/CSVStringToObjectBolt.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="80">
-                  <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+                <state relative-caret-position="56">
+                  <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -77,8 +82,8 @@
           <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trucking-commons/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+                <state relative-caret-position="195">
+                  <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -87,8 +92,8 @@
           <file leaf-file-name="WindowedDriverStats.scala" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trucking-commons/src/main/scala/com/orendainx/hortonworks/trucking/commons/models/WindowedDriverStats.scala">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
                   <folding />
                 </state>
               </provider>
@@ -104,11 +109,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/pom.xml">
+          <file leaf-file-name="TruckingData.scala" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/trucking-commons/src/main/scala/com/orendainx/hortonworks/trucking/commons/models/TruckingData.scala">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="389">
-                  <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+                <state relative-caret-position="150">
+                  <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -117,8 +122,8 @@
           <file leaf-file-name="DataWindowingBolt.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/DataWindowingBolt.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="725">
-                  <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+                <state relative-caret-position="259">
+                  <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -130,7 +135,7 @@
             <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/ObjectToCSVStringBolt.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="330">
-                  <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -145,8 +150,8 @@
           <file leaf-file-name="application.conf" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/resources/application.conf">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1306">
-                  <caret line="137" column="79" lean-forward="false" selection-start-line="137" selection-start-column="79" selection-end-line="137" selection-end-column="79" />
+                <state relative-caret-position="750">
+                  <caret line="152" column="0" lean-forward="true" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -196,6 +201,7 @@
         <option value="$PROJECT_DIR$/trucking-storm-topology-java-java/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/topologies/KafkaToKafka.java" />
+        <option value="$PROJECT_DIR$/trucking-storm-topology-java/src/main/resources/application.conf" />
         <option value="$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/TruckAndTrafficJoinBolt.java" />
       </list>
     </option>
@@ -426,6 +432,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1009,12 +1019,12 @@
       <workItem from="1492384047377" duration="6896000" />
       <workItem from="1492413397322" duration="80000" />
       <workItem from="1492413482676" duration="61000" />
-      <workItem from="1492413603015" duration="11290000" />
+      <workItem from="1492413603015" duration="15428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18327000" />
+    <option name="totallyTimeSpent" value="22465000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1075,14 +1085,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/trucking-commons/trucking-commons.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/topologies/KafkaToKafka.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1386,26 +1388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trucking-commons/src/main/scala/com/orendainx/hortonworks/trucking/commons/models/EnrichedTruckAndTrafficData.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trucking-commons/trucking-commons.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trucking-commons/src/main/scala/com/orendainx/hortonworks/trucking/commons/models/WindowedDriverStats.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1418,26 +1404,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trucking-commons/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/storm/storm-core/1.1.0/storm-core-1.1.0.jar!/org/apache/storm/Config.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="864" column="14" lean-forward="false" selection-start-line="864" selection-start-column="14" selection-end-line="864" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1450,14 +1420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/resources/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1306">
-          <caret line="137" column="79" lean-forward="false" selection-start-line="137" selection-start-column="79" selection-end-line="137" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/schemes/TruckingStringScheme.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1466,20 +1428,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/resources/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="152" column="0" lean-forward="true" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/topologies/KafkaToKafka.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        <state relative-caret-position="479">
+          <caret line="88" column="91" lean-forward="true" selection-start-line="88" selection-start-column="91" selection-end-line="88" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trucking-commons/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trucking-commons/src/main/scala/com/orendainx/hortonworks/trucking/commons/models/EnrichedTruckAndTrafficData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trucking-commons/src/main/scala/com/orendainx/hortonworks/trucking/commons/models/TruckingData.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trucking-commons/src/main/scala/com/orendainx/hortonworks/trucking/commons/models/WindowedDriverStats.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/CSVStringToObjectBolt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="56">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1489,7 +1499,7 @@
     <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/ObjectToCSVStringBolt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1498,8 +1508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/DataWindowingBolt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="259">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1508,8 +1518,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trucking-storm-topology-java/src/main/java/com/orendainx/hortonworks/trucking/storm/java/bolts/TruckAndTrafficJoinBolt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        <state relative-caret-position="-535">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
