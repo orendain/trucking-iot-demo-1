@@ -12,9 +12,9 @@ import org.apache.storm.tuple.Tuple;
 import org.apache.storm.tuple.Values;
 import org.apache.storm.windowing.TupleWindow;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+
+import static java.lang.Math.abs;
 
 /**
   * Bolt responsible for routing data to multiple streams.
@@ -79,18 +79,19 @@ public class TruckAndTrafficJoinBolt extends BaseWindowedBolt {
       if (trafficDataList != null) {
         for (EnrichedTruckData truckData : truckDataList) {
 
+          // Sort by event with the closest timestamp
+          trafficDataList.sort(Comparator.comparingLong(d -> abs(d.eventTime() - truckData.eventTime())));
 
-          TrafficData trafficData = trafficDataList.get(0);
+          // Otherwise, window didn't capture any traffic data for this truck's route
+          if (trafficDataList.size() > 0) {
+            TrafficData trafficData = trafficDataList.get(0);
 
-          //trafficDataList.sortBy(data => math.abs(data.eventTime - truckData.eventTime)).headOption match {
-            //case None => // Window didn't capture any traffic data for this truck's route
-            //case Some(trafficData) =>
+            EnrichedTruckAndTrafficData joinedData = new EnrichedTruckAndTrafficData(truckData.eventTime(), truckData.truckId(), truckData.driverId(), truckData.driverName(),
+                truckData.routeId(), truckData.routeName(), truckData.latitude(), truckData.longitude(), truckData.speed(),
+                truckData.eventType(), truckData.foggy(), truckData.rainy(), truckData.windy(), trafficData.congestionLevel());
 
-          EnrichedTruckAndTrafficData joinedData = new EnrichedTruckAndTrafficData(truckData.eventTime(), truckData.truckId(), truckData.driverId(), truckData.driverName(),
-              truckData.routeId(), truckData.routeName(), truckData.latitude(), truckData.longitude(), truckData.speed(),
-              truckData.eventType(), truckData.foggy(), truckData.rainy(), truckData.windy(), trafficData.congestionLevel());
-
-          outputCollector.emit(new Values("EnrichedTruckAndTrafficData", joinedData, joinedData.driverId()));
+            outputCollector.emit(new Values("EnrichedTruckAndTrafficData", joinedData, joinedData.driverId()));
+          }
         }
       }
     }
