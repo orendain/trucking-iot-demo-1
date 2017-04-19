@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-scriptDir="$(cd "$( dirname "${BASH_SOURCE[0]}" )"/.. && pwd)"
+projectDir="$(cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd)"
 
-cd $scriptDir/trucking-commons
+cd $projectDir/trucking-commons
 mvn scala:compile
 
-cd $scriptDir
+cd $projectDir
 mvn install

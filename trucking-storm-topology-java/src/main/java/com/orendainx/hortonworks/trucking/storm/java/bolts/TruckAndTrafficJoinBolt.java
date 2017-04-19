@@ -20,7 +20,7 @@ import java.util.Map;
 import static java.lang.Math.abs;
 
 /**
-  * Bolt responsible for routing data to multiple streams.
+  * Bolt responsible for joining tuples housing different data types together
   *
   * @author Edgar Orendain <edgar@orendainx.com>
   */

@@ -30,16 +30,11 @@ public class DataWindowingBolt extends BaseWindowedBolt {
   }
 
   public void execute(TupleWindow inputWindow) {
-    // This should be a single tuple
-    List<Tuple> newTuples = inputWindow.getNew();
-    if (newTuples.size() > 1) {
-      throw new IllegalStateException("Expected only a single new tuple in the TupleWindow.");
-    }
-
-    EnrichedTruckAndTrafficData newData = (EnrichedTruckAndTrafficData)newTuples.get(0).getValueByField("data");
+    // Retrieve only the latest tuple
+    EnrichedTruckAndTrafficData newestTuple = ((EnrichedTruckAndTrafficData)inputWindow.getNew().get(0).getValueByField("data"));
 
     // Find the driverId of the tuple just passed in
-    final int driverId = newData.driverId();
+    final int driverId = newestTuple.driverId();
 
     // For each tuple in the window, extract into a EnrichedTruckAndTrafficData instance and filter so as to
     // only keep ones with the same driverId as the newest tuple in the window.
