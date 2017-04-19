@@ -21,13 +21,10 @@ curl -u admin:admin -i -H 'X-Requested-By: ambari' -X PUT -d '{"RequestInfo": {"
 sleep 10
 curl -u admin:admin -i -H 'X-Requested-By: ambari' -X PUT -d '{"RequestInfo": {"context": "Start Kafka"}, "ServiceInfo": {"state": "STARTED"}}' http://sandbox.hortonworks.com:8080/api/v1/clusters/Sandbox/services/KAFKA
 
-echo "Checking for SBT, installing if missing"
+echo "Checking for SBT and maven, installing if missing"
 curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
-yum -y install sbt-0.13.13.1-1
-
-echo "Checking for Maven, installing if missing"
 wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
-yum install -y apache-maven
+yum -y install sbt-0.13.13.1-1 apache-maven
 
 scripts/create-kafka-topics.sh
 
