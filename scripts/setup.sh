@@ -15,7 +15,6 @@ git checkout dev
 
 #
 # Note: This script assumes that Ambari is up and running at this point.
-# It also assumes an Ambari username/pass of admin/admin and that it's running on local port 8080 with hostname "sandbox.hortonworks.com"
 #
 
 echo "Setting delete.topic.enable to true via Ambari"
