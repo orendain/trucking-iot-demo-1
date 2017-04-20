@@ -190,7 +190,7 @@ public class KafkaToKafka {
 
 
     /*
-     * Build KafkaBolts to stream Tuples into a Kafka topic
+     * Build KafkaBolts to stream tuples into a Kafka topic
      */
 
     // Define properties to pass along to the two KafkaBolts
