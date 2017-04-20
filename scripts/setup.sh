@@ -34,4 +34,3 @@ scripts/create-kafka-topics.sh
 
 cd $projectDir
 scripts/build-topology.sh
-
